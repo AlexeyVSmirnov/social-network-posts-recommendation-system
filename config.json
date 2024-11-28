@@ -1,0 +1,24 @@
+{
+    "db": {
+        "use_db": false,
+        "batch_load_chunk_size": 200000
+    },
+    "test_group": {
+        "group_name": "test",
+        "split_percent": 50,
+        "split_salt": "kc_fin4of4",
+        "model_columns": ["gender", "age", "country_and_city", "exp_group", "os_iOS",
+                          "source_organic", "topic", "tfidf_mean", "tfidf_max",
+                          "d2v_1", "d2v_2", "d2v_3", "d2v_4", "d2v_5", "d2v_6", "d2v_7",
+                          "d2v_8", "d2v_9", "d2v_10", "d2v_11", "d2v_12", "d2v_13",
+                          "d2v_14", "d2v_15", "d2v_16", "d2v_17", "d2v_18", "d2v_19",
+                          "d2v_20"],
+        "model_file_name": "./models/catboost_model_test"
+    },
+    "control_group": {
+        "group_name": "control",
+        "model_columns": ["gender", "age", "country_and_city", "exp_group", "os_iOS",
+                          "source_organic", "topic", "tfidf_mean", "tfidf_max"],
+        "model_file_name": "./models/catboost_model_control"
+    }
+}
