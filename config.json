@@ -1,6 +1,6 @@
 {
     "db": {
-        "use_db": false,
+        "use_db": true,
         "batch_load_chunk_size": 200000
     },
     "test_group": {
@@ -20,5 +20,11 @@
         "model_columns": ["gender", "age", "country_and_city", "exp_group", "os_iOS",
                           "source_organic", "topic", "tfidf_mean", "tfidf_max"],
         "model_file_name": "./models/catboost_model_control"
+    },
+    "local_data": {
+        "user_features": "./data/user_features.csv",
+        "post_features_control": "./data/post_features.csv",
+        "post_features_test": "./data/post_features_extended.csv",
+        "post_texts": "./data/post_text.csv"
     }
 }
