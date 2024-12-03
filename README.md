@@ -30,13 +30,14 @@
 ```
 git clone https://github.com/AlexeyVSmirnov/social-network-posts-recommendation-system.git
 ```
-Далее в директории репозитория создать и активировать виртуальное окружение и установить требуемые зависимости следующей командой:  
+Далее нужно перейти в директорию `social-network-posts-recommendation-system`. В этой директории нужно **создать и активировать виртуальное окружение**. 
+Далее, находясь в этой директории, установить требуемые зависимости следующей командой:  
 ```
 pip install -r requirements.txt
 ```
 Для запуска сервиса нужно выполнить команду
 ```
-python.exe -m uvicorn app:app
+uvicorn app:app
 ```
 После завершения процесса запуска сервис доступен по адресу [http://127.0.0.1:8000/post/recommendations/](http://127.0.0.1:8000/post/recommendations/)  
 Примеры запросов к сервису:
